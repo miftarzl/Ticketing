@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pembayaran berhasil, e-tiket otomatis dikirim ke email.">
+  <title>Pembayaran Berhasil - TMII Tiket</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/tokens.css">
+  <link rel="stylesheet" href="src/css/base.css">
+  <link rel="stylesheet" href="src/css/layout.css">
+  <link rel="stylesheet" href="src/css/components.css">
+  <link rel="stylesheet" href="src/css/pages.css">
+  <link rel="stylesheet" href="src/css/responsive.css">
+  <link rel="stylesheet" href="src/css/print.css">
+</head>
+<body data-page="sukses">
+  <a class="skip-link" href="#main">Lewati ke isi halaman</a>
+  <header id="site-header" class="site-header"></header>
+
+  <main id="main" class="app"></main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+  <dialog id="payment-dialog" class="dialog" aria-labelledby="payment-title"></dialog>
+  <div id="toast-region" class="toast-region" aria-live="polite"></div>
+  <section id="print-ticket" class="print-only" aria-hidden="true"></section>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.6/dist/JsBarcode.all.min.js"></script>
+  <script type="module" src="src/js/main.js"></script>
+  <script type="module" src="src/js/pages/sukses.js"></script>
+
+</body>
+</html>

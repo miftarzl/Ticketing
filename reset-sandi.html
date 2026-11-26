@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Buat kata sandi baru TMII Tiket.">
+  <title>Reset Kata Sandi - TMII Tiket</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/tokens.css">
+  <link rel="stylesheet" href="src/css/base.css">
+  <link rel="stylesheet" href="src/css/layout.css">
+  <link rel="stylesheet" href="src/css/components.css">
+  <link rel="stylesheet" href="src/css/pages.css">
+  <link rel="stylesheet" href="src/css/responsive.css">
+  <link rel="stylesheet" href="src/css/print.css">
+</head>
+<body data-page="reset-sandi">
+  <a class="skip-link" href="#main">Lewati ke isi halaman</a>
+  <header id="site-header" class="site-header"></header>
+
+  <main id="main" class="app">
+    <div class="container">
+      <div class="auth-wrap">
+        <div class="card auth-card">
+          <h1>Buat kata sandi baru</h1>
+          <div id="reset-invalid" hidden>
+            <div class="alert alert-error" role="alert">Tautan reset ini tidak lengkap. Minta tautan baru dari halaman lupa kata sandi.</div>
+            <p class="auth-switch"><a href="lupa-sandi.html">Ke halaman lupa kata sandi</a></p>
+          </div>
+          <div id="reset-done" hidden>
+            <div class="alert alert-info" role="status">Kata sandi berhasil diganti. Semua sesi akunmu yang sedang aktif sudah diakhiri; masuk lagi dengan kata sandi baru ya.</div>
+            <p class="auth-switch"><a href="masuk.html">Ke halaman masuk</a></p>
+          </div>
+          <form id="reset-form" novalidate>
+            <p class="muted">Tautan ini hanya bisa dipakai sekali. Kata sandi baru minimal 8 karakter.</p>
+            <div class="field">
+              <label for="reset-password">Kata sandi baru</label>
+              <input id="reset-password" name="password" type="password" autocomplete="new-password" placeholder="Minimal 8 karakter" required>
+            </div>
+            <div class="field">
+              <label for="reset-confirm">Ulangi kata sandi baru</label>
+              <input id="reset-confirm" name="confirm" type="password" autocomplete="new-password" placeholder="Ketik ulang kata sandi baru" required>
+            </div>
+            <button class="btn btn-primary btn-block" type="submit">Simpan kata sandi baru</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+  <div id="toast-region" class="toast-region" aria-live="polite"></div>
+
+  <script type="module" src="src/js/main.js"></script>
+  <script type="module" src="src/js/pages/reset-sandi.js"></script>
+
+</body>
+</html>

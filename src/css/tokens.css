@@ -1,0 +1,53 @@
+:root {
+  --green-950: #0e3a26;
+  --green-900: #14532d;
+  --green-700: #1e7a4f;
+  --green-100: #e2f2e7;
+  --cream: #fffaf0;
+  --sand: #f7ecd4;
+  --sand-strong: #eedcae;
+  --terra: #bc521f;
+  --terra-dark: #9a4215;
+  --gold: #d9a521;
+  --gold-soft: #f7e7bc;
+  --ink: #1a1f1c;
+  --body: #3e4a42;
+  --muted: #667168;
+  --line: #d9ded9;
+  --white: #ffffff;
+  --danger: #b42318;
+  --danger-bg: #fef3f2;
+  --warning-bg: #fffaeb;
+  --warning-text: #93370d;
+  --success-bg: #ecfdf3;
+  /* Keluarga warna budaya: tiap warna menandai satu kategori wahana,
+     jadi warna di situs ini membawa arti, bukan sekadar hiasan. */
+  --daun: #178a50;
+  --daun-text: #14532d;
+  --daun-tint: #e1f3e8;
+  --kunyit: #d98e00;
+  --kunyit-text: #8a5a00;
+  --kunyit-tint: #fbf0d3;
+  --bata: #ce4b1d;
+  --bata-text: #a63e13;
+  --bata-tint: #fbe9df;
+  --nila: #2f5da8;
+  --nila-text: #274b87;
+  --nila-tint: #e6eefa;
+  --tosca: #0b8585;
+  --tosca-text: #0a6b6b;
+  --tosca-tint: #dff3f3;
+  --anggrek: #7a4fa3;
+  --anggrek-text: #623f85;
+  --anggrek-tint: #f0e9f8;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --shadow-sm: 0 1px 2px rgb(26 31 28 / 0.06);
+  --shadow-md: 0 12px 32px rgb(26 31 28 / 0.12);
+  --shadow-lg: 0 24px 48px rgb(14 58 38 / 0.18);
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --container: min(1344px, calc(100% - 48px));
+  --header-height: 64px;
+  --font: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}

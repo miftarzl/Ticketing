@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TMII Tiket, pesan tiket Taman Mini Indonesia Indah.">
+  <title>TMII Tiket</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/tokens.css">
+  <link rel="stylesheet" href="src/css/base.css">
+  <link rel="stylesheet" href="src/css/layout.css">
+  <link rel="stylesheet" href="src/css/components.css">
+  <link rel="stylesheet" href="src/css/pages.css">
+  <link rel="stylesheet" href="src/css/responsive.css">
+  <link rel="stylesheet" href="src/css/print.css">
+</head>
+<body data-page="admin-login" class="admin-login-body">
+  <main class="admin-login-wrap">
+    <form class="card admin-login-card" id="admin-login-form" novalidate>
+      <div class="admin-login-brand">
+        <strong>TMII Admin</strong>
+        <span>Panel Super Admin</span>
+      </div>
+      <div class="field">
+        <label for="admin-email">Email admin</label>
+        <input id="admin-email" name="email" type="email" autocomplete="username" placeholder="nama@admin.id" required>
+      </div>
+      <div class="field">
+        <label for="admin-password">Kata sandi</label>
+        <input id="admin-password" name="password" type="password" autocomplete="current-password" placeholder="Kata sandi admin" required>
+      </div>
+      <button class="btn btn-primary btn-block" type="submit">Masuk ke panel</button>
+      <p class="small muted">Lupa kata sandi? Hubungi Super Admin / Tim IT untuk diatur ulang.</p>
+      <p class="small muted">Halaman ini khusus pengelola. Pengunjung biasa masuk lewat halaman Masuk di situs utama.</p>
+      <p class="auth-switch"><a href="index.html">Kembali ke situs utama</a></p>
+    </form>
+  </main>
+
+  <div id="toast-region" class="toast-region" aria-live="polite"></div>
+
+  <script type="module" src="src/js/pages/admin-login.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Daftar akun TMII Tiket.">
+  <title>Daftar - TMII Tiket</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/tokens.css">
+  <link rel="stylesheet" href="src/css/base.css">
+  <link rel="stylesheet" href="src/css/layout.css">
+  <link rel="stylesheet" href="src/css/components.css">
+  <link rel="stylesheet" href="src/css/pages.css">
+  <link rel="stylesheet" href="src/css/responsive.css">
+  <link rel="stylesheet" href="src/css/print.css">
+</head>
+<body data-page="daftar">
+  <a class="skip-link" href="#main">Lewati ke isi halaman</a>
+  <header id="site-header" class="site-header"></header>
+
+  <main id="main" class="app">
+    <div class="container">
+      <div class="auth-wrap">
+        <form class="card auth-card" id="register-form" novalidate>
+          <h1>Daftar akun</h1>
+          <p class="muted">Akun dipakai untuk menyimpan pesanan dan e-tiket kamu.</p>
+          <div class="field">
+            <label for="register-name">Nama lengkap</label>
+            <input id="register-name" name="name" type="text" autocomplete="name" placeholder="Tulis nama kamu" required>
+          </div>
+          <div class="field">
+            <label for="register-email">Email</label>
+            <input id="register-email" name="email" type="email" autocomplete="email" placeholder="nama@email.com" required>
+          </div>
+          <div class="field">
+            <label for="register-whatsapp">Nomor WhatsApp</label>
+            <input id="register-whatsapp" name="whatsapp" type="tel" autocomplete="tel" placeholder="Nomor aktif, format 08xxxxxxxxxx" required>
+          </div>
+          <div class="field">
+            <label for="register-password">Kata sandi</label>
+            <input id="register-password" name="password" type="password" autocomplete="new-password" placeholder="Buat kata sandi baru" required>
+            <span class="hint">Minimal 8 karakter.</span>
+          </div>
+          <div class="field">
+            <label for="register-confirm">Ulangi kata sandi</label>
+            <input id="register-confirm" name="confirm" type="password" autocomplete="new-password" placeholder="Tulis lagi kata sandi kamu" required>
+          </div>
+          <button class="btn btn-primary btn-block" type="submit">Daftar</button>
+          <p class="auth-switch">Sudah punya akun? <a href="masuk.html">Masuk</a></p>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+  <dialog id="payment-dialog" class="dialog" aria-labelledby="payment-title"></dialog>
+  <div id="toast-region" class="toast-region" aria-live="polite"></div>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+  <script type="module" src="src/js/main.js"></script>
+  <script type="module" src="src/js/pages/daftar.js"></script>
+
+</body>
+</html>

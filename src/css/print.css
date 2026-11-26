@@ -1,0 +1,11 @@
+.print-only { display: none; }
+
+@media print {
+  body { background: var(--white); }
+  .site-header, .site-footer, .app, .toast-region, .cart-dock { display: none !important; }
+  .print-only { display: block; padding: 24px; }
+  .print-only h1 { font-size: 22px; }
+  .print-only dl { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 24px; }
+  .print-only dt { font-weight: 700; color: #555; font-size: 12px; }
+  .print-only dd { margin: 0 0 10px; font-weight: 700; }
+}

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tentang Taman Mini Indonesia Indah.">
+  <title>Tentang - TMII Tiket</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/tokens.css">
+  <link rel="stylesheet" href="src/css/base.css">
+  <link rel="stylesheet" href="src/css/layout.css">
+  <link rel="stylesheet" href="src/css/components.css">
+  <link rel="stylesheet" href="src/css/pages.css">
+  <link rel="stylesheet" href="src/css/responsive.css">
+  <link rel="stylesheet" href="src/css/print.css">
+</head>
+<body data-page="tentang">
+  <a class="skip-link" href="#main">Lewati ke isi halaman</a>
+  <header id="site-header" class="site-header"></header>
+
+  <main id="main" class="app">
+    <div class="container">
+      <div class="page-head"><h1>Tentang TMII</h1></div>
+      <div class="about-grid">
+        <div>
+          <p>Taman Mini Indonesia Indah adalah taman wisata budaya di Jakarta Timur. Di satu kawasan, kamu bisa melihat rumah adat, pakaian daerah, dan kesenian dari berbagai provinsi di Indonesia, lalu lanjut ke museum, taman, dan wahana keluarga tanpa pindah tempat.</p>
+          <p>TMII diresmikan pada tahun 1975 dan sejak itu menjadi tempat belajar budaya Indonesia tanpa harus keliling negeri: cukup datang ke satu kawasan, lalu berjalan dari satu anjungan daerah ke anjungan berikutnya.</p>
+          <p>Tempat ini cocok untuk liburan keluarga, wisata sekolah, dan kunjungan pertama ke Jakarta. Halaman tiket ini dibuat supaya urusan masuknya gampang: pesan dari rumah, bayar, lalu scan di gerbang.</p>
+          <p><a class="btn btn-accent" href="tiket.html">Lihat tiket</a></p>
+        </div>
+        <figure class="about-photo">
+          <img src="assets/tentang-utama.jpg" alt="Kawasan anjungan TMII dilihat dari atas" width="1280" height="853">
+          <figcaption>Kawasan anjungan dilihat dari atas: rumah adat di tepi danau, dengan jalur kereta keliling melintas di sampingnya.</figcaption>
+        </figure>
+      </div>
+      <section class="about-highlights">
+        <h2>Yang bisa kamu lihat di dalam</h2>
+        <div class="about-cards">
+          <article class="about-card">
+            <img src="assets/anjungan-tongkonan.jpg" alt="Deretan rumah Tongkonan di Anjungan Sulawesi Selatan TMII" width="870" height="580">
+            <div class="about-card-body">
+              <h3>Anjungan Daerah</h3>
+              <p>Rumah adat dari berbagai provinsi, masing-masing memajang pakaian, alat musik, dan kerajinan daerahnya.</p>
+              <a href="wahana.html">Lihat wahananya</a>
+            </div>
+          </article>
+          <article class="about-card">
+            <img src="assets/danau-archipelago.jpg" alt="Danau Archipelago dengan miniatur kepulauan Indonesia" width="1280" height="960">
+            <div class="about-card-body">
+              <h3>Danau Archipelago</h3>
+              <p>Danau di tengah kawasan dengan miniatur kepulauan Indonesia, paling enak dilihat dari kereta gantung.</p>
+              <a href="wahana.html">Lihat wahananya</a>
+            </div>
+          </article>
+          <article class="about-card">
+            <img src="assets/kereta-gantung.jpg" alt="Kabin kereta gantung melintasi kawasan TMII" width="1200" height="800">
+            <div class="about-card-body">
+              <h3>Kereta Gantung</h3>
+              <p>Kabin gantung yang melintasi kawasan; dari atas terlihat danau dan deretan anjungan di bawahnya.</p>
+              <a href="tiket.html">Lihat tiketnya</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+  <dialog id="payment-dialog" class="dialog" aria-labelledby="payment-title"></dialog>
+  <div id="toast-region" class="toast-region" aria-live="polite"></div>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+  <script type="module" src="src/js/main.js"></script>
+
+</body>
+</html>

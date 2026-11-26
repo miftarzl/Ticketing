@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TMII Tiket, pesan tiket Taman Mini Indonesia Indah. E-tiket dikirim ke email dan dapat diunduh sebagai PDF.">
+  <title>Beranda - TMII Tiket</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/tokens.css">
+  <link rel="stylesheet" href="src/css/base.css">
+  <link rel="stylesheet" href="src/css/layout.css">
+  <link rel="stylesheet" href="src/css/components.css">
+  <link rel="stylesheet" href="src/css/pages.css">
+  <link rel="stylesheet" href="src/css/responsive.css">
+  <link rel="stylesheet" href="src/css/print.css">
+</head>
+<body data-page="beranda">
+  <a class="skip-link" href="#main">Lewati ke isi halaman</a>
+  <header id="site-header" class="site-header"></header>
+
+  <main id="main" class="app">
+    <section class="hero" id="beranda">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <h1>Keliling Indonesia dalam <span class="accent">satu hari</span>.</h1>
+          <p>Satu pesanan untuk tiket masuk, anjungan, museum, dan wahana. Kamu memilih tanggalnya, kami siapkan e-tiketnya, kamu masuk dengan scan QR di gerbang.</p>
+          <div class="hero-actions">
+            <a class="btn btn-accent" href="tiket.html">Pesan tiket masuk</a>
+            <a class="hero-link" href="tiket.html">Lihat paket keluarga</a>
+          </div>
+        </div>
+        <p class="hero-caption">Danau Archipelago, miniatur kepulauan Indonesia di tengah kawasan TMII.</p>
+      </div>
+    </section>
+
+    <div class="container">
+      <form class="card booking-bar" id="booking-search" aria-label="Cari tiket">
+        <div class="field">
+          <label for="ticket-category">Yang dicari</label>
+          <select id="ticket-category" name="category">
+            <option value="semua" selected>Semua tiket</option>
+            <option value="paket">Paket keluarga</option>
+            <option value="budaya">Budaya dan museum</option>
+            <option value="wahana">Wahana</option>
+          </select>
+        </div>
+        <button class="btn btn-primary" type="submit">Cari tiket</button>
+      </form>
+
+      <section class="section" aria-labelledby="steps-title">
+        <div class="section-head"><h2 id="steps-title">Cara pesan</h2></div>
+        <div class="steps">
+          <article class="step"><div class="step-number" aria-hidden="true">1</div><h3>Pilih tiket dan tanggal</h3><p>Kamu tentukan sendiri wahana mana yang mau dimasukkan.</p></article>
+          <article class="step"><div class="step-number" aria-hidden="true">2</div><h3>Isi data pemesan</h3><p>Cukup nama, nomor WhatsApp, dan email. Tidak perlu buat akun.</p></article>
+          <article class="step"><div class="step-number" aria-hidden="true">3</div><h3>Bayar</h3><p>QRIS, dompet digital, atau transfer bank.</p></article>
+          <article class="step"><div class="step-number" aria-hidden="true">4</div><h3>Scan di gerbang</h3><p>E-tiket berisi QR dikirim ke email kamu.</p></article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="routes-title">
+        <div class="section-head">
+          <h2 id="routes-title">Rute Kunjungan</h2>
+          <p>Tiga usulan urutan keliling kawasan. Pilih yang cocok dengan waktu dan rombonganmu.</p>
+        </div>
+        <div class="facility-grid">
+          <article class="card facility route">
+            <h3>Rute Keluarga</h3>
+            <span class="route-time">Setengah hari</span>
+            <ol class="route-stops">
+              <li>Istana Anak-Anak Indonesia</li>
+              <li>Taman Burung</li>
+              <li>Kereta Gantung</li>
+              <li>Danau Archipelago</li>
+            </ol>
+            <p>Anak-anak main dan lihat burung dulu, ditutup naik kereta gantung di atas danau.</p>
+            <a class="route-link" href="wahana.html">Lihat wahananya</a>
+          </article>
+          <article class="card facility route">
+            <h3>Rute Budaya</h3>
+            <span class="route-time">Seharian</span>
+            <ol class="route-stops">
+              <li>Anjungan Daerah</li>
+              <li>Museum Indonesia</li>
+              <li>Teater IMAX Keong Mas</li>
+              <li>Danau Archipelago</li>
+            </ol>
+            <p>Keliling rumah adat dan museum, nonton film di Keong Mas, lalu rehat di tepi danau.</p>
+            <a class="route-link" href="wahana.html">Lihat wahananya</a>
+          </article>
+          <article class="card facility route">
+            <h3>Rute Santai</h3>
+            <span class="route-time">Sore hari</span>
+            <ol class="route-stops">
+              <li>Taman Burung</li>
+              <li>Kereta Gantung</li>
+              <li>Danau Archipelago</li>
+            </ol>
+            <p>Datang sore saat lebih sejuk, naik kereta gantung, lalu duduk santai di tepi danau.</p>
+            <a class="route-link" href="wahana.html">Lihat wahananya</a>
+          </article>
+        </div>
+        <figure class="route-map">
+          <a href="assets/peta-kawasan.jpg" target="_blank" rel="noopener"><img src="assets/peta-kawasan.jpg" alt="Peta kawasan Taman Mini Indonesia Indah" width="2560" height="1058" loading="lazy"></a>
+          <figcaption>Peta kawasan TMII. Klik peta untuk melihat ukuran penuh.</figcaption>
+        </figure>
+      </section>
+
+
+      <section class="section" id="fasilitas" aria-labelledby="facilities-title">
+        <div class="section-head">
+          <span class="kicker">Fasilitas</span>
+          <h2 id="facilities-title">Fasilitas</h2>
+          <p>Yang tersedia di dalam kawasan untuk menemani kunjungan kamu.</p>
+        </div>
+        <div class="facility-grid">
+          <article class="card facility facility-photo"><img class="facility-img" src="assets/parkir.jpg" alt="Area parkir di TMII" width="1280" height="960" loading="lazy"><div class="facility-body"><h3>Area parkir</h3><p>Tersedia untuk motor, mobil, dan bus rombongan sekolah.</p></div></article>
+          <article class="card facility facility-photo"><img class="facility-img" src="assets/masjid.jpg" alt="Masjid Pangeran Diponegoro di TMII" width="1280" height="960" loading="lazy"><div class="facility-body"><h3>Mushola</h3><p>Ada di area anjungan dan titik utama kawasan.</p></div></article>
+          <article class="card facility facility-photo"><img class="facility-img" src="assets/restoran.jpg" alt="Restoran Caping Gunung di TMII" width="1280" height="960" loading="lazy"><div class="facility-body"><h3>Tempat makan</h3><p>Restoran, kafe, dan pedagang makanan di dalam kawasan.</p></div></article>
+          <article class="card facility facility-photo"><img class="facility-img" src="assets/kereta-keliling.jpg" alt="Kereta wisata keliling di TMII" width="1280" height="720" loading="lazy"><div class="facility-body"><h3>Transportasi keliling</h3><p>Angkutan keliling listrik, kereta gantung, dan penyewaan sepeda.</p></div></article>
+          <article class="card facility facility-photo"><img class="facility-img" src="assets/pusat-informasi.jpg" alt="Gedung TMII Information Center dilihat dari tamannya" width="1200" height="640" loading="lazy"><div class="facility-body"><h3>Pusat informasi</h3><p>Petugas informasi di dekat gerbang masuk.</p></div></article>
+          <article class="card facility facility-photo"><img class="facility-img" src="assets/area-istirahat.jpg" alt="Pendopo Soko Tujuh tempat berteduh di kawasan Museum Indonesia TMII" width="1080" height="720" loading="lazy"><div class="facility-body"><h3>Area istirahat</h3><p>Taman dan bangku untuk duduk santai dan piknik keluarga.</p></div></article>
+        </div>
+      </section>
+
+      <section class="section" id="lokasi" aria-labelledby="location-title">
+        <div class="section-head">
+          <span class="kicker">Lokasi</span>
+          <h2 id="location-title">Lokasi</h2>
+          <p>Penanda peta berada di kawasan Taman Mini Indonesia Indah, Jakarta Timur.</p>
+        </div>
+        <div class="map-frame">
+          <iframe title="Peta lokasi Taman Mini Indonesia Indah" src="https://www.google.com/maps?q=-6.30167,106.89667&z=15&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="map-bar">
+            <div><strong>Taman Mini Indonesia Indah</strong><span>Ceger, Cipayung, Kota Jakarta Timur</span></div>
+            <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=-6.30167,106.89667" target="_blank" rel="noopener">Buka di Google Maps</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="partner" aria-labelledby="partner-title">
+        <div class="section-head">
+          <span class="kicker">Partner</span>
+          <h2 id="partner-title">Partner pembayaran</h2>
+          <p>Pembayaran di situs ini diproses melalui Midtrans. Metode yang tersedia lewat gerbang pembayaran itu antara lain:</p>
+        </div>
+        <div class="partner-grid">
+          <div class="partner-item"><span class="partner-name">Midtrans</span><span class="partner-type">Gerbang pembayaran</span></div>
+          <div class="partner-item"><span class="partner-name">QRIS</span><span class="partner-type">Kode QR semua aplikasi</span></div>
+          <div class="partner-item"><span class="partner-name">GoPay</span><span class="partner-type">Dompet digital</span></div>
+          <div class="partner-item"><span class="partner-name">OVO</span><span class="partner-type">Dompet digital</span></div>
+          <div class="partner-item"><span class="partner-name">DANA</span><span class="partner-type">Dompet digital</span></div>
+          <div class="partner-item"><span class="partner-name">ShopeePay</span><span class="partner-type">Dompet digital</span></div>
+          <div class="partner-item"><span class="partner-name">BCA</span><span class="partner-type">Transfer bank</span></div>
+          <div class="partner-item"><span class="partner-name">Mandiri</span><span class="partner-type">Transfer bank</span></div>
+          <div class="partner-item"><span class="partner-name">BRI</span><span class="partner-type">Transfer bank</span></div>
+          <div class="partner-item"><span class="partner-name">BNI</span><span class="partner-type">Transfer bank</span></div>
+        </div>
+      </section>
+
+      <section class="section" id="kontak" aria-labelledby="contact-title">
+        <div class="section-head">
+          <span class="kicker">Kontak</span>
+          <h2 id="contact-title">Kontak</h2>
+          <p>Hubungi kami sebelum atau sesudah kunjungan.</p>
+        </div>
+        <div class="card card-pad">
+          <dl class="contact-grid">
+            <div><dt>Alamat</dt><dd>Taman Mini Indonesia Indah, Ceger, Cipayung, Kota Jakarta Timur</dd></div>
+            <div><dt>Situs resmi</dt><dd><a href="https://www.tamanmini.com" target="_blank" rel="noopener">www.tamanmini.com</a></dd></div>
+            <div><dt>Telepon</dt><dd>(diisi nomor resmi TMII sebelum terbit)</dd></div>
+            <div><dt>Email</dt><dd>(diisi email resmi TMII sebelum terbit)</dd></div>
+            <div><dt>Tanya soal pesanan</dt><dd>Sebutkan kode pesanan kamu, contoh TMII-2026-0000, supaya cepat dicari.</dd></div>
+            <div><dt>Cek pesanan sendiri</dt><dd><a href="cek-pesanan.html">Buka halaman Cek Pesanan</a></dd></div>
+          </dl>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+  <dialog id="payment-dialog" class="dialog" aria-labelledby="payment-title"></dialog>
+  <div id="toast-region" class="toast-region" aria-live="polite"></div>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+  <script type="module" src="src/js/main.js"></script>
+  <script type="module" src="src/js/pages/beranda.js"></script>
+</body>
+</html>

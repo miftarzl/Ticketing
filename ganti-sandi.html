@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ganti kata sandi pengelola TMII Tiket.">
+  <title>Ganti Kata Sandi - TMII Tiket</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/tokens.css">
+  <link rel="stylesheet" href="src/css/base.css">
+  <link rel="stylesheet" href="src/css/layout.css">
+  <link rel="stylesheet" href="src/css/components.css">
+  <link rel="stylesheet" href="src/css/pages.css">
+  <link rel="stylesheet" href="src/css/responsive.css">
+  <link rel="stylesheet" href="src/css/print.css">
+</head>
+<body data-page="ganti-sandi" class="admin-login-body">
+  <main class="admin-login-wrap">
+    <form class="card admin-login-card" id="change-form" novalidate>
+      <div class="admin-login-brand">
+        <strong>TMII Admin</strong>
+        <span>Ganti kata sandi</span>
+      </div>
+      <p class="small muted">Kata sandimu baru diatur ulang oleh Super Admin dengan sandi sementara. Buat kata sandi pribadi barumu untuk melanjutkan. Minimal 6 karakter.</p>
+      <div class="field">
+        <label for="change-password">Kata sandi baru</label>
+        <input id="change-password" name="password" type="password" autocomplete="new-password" placeholder="Minimal 6 karakter" required>
+      </div>
+      <div class="field">
+        <label for="change-confirm">Ulangi kata sandi baru</label>
+        <input id="change-confirm" name="confirm" type="password" autocomplete="new-password" placeholder="Ketik ulang kata sandi baru" required>
+      </div>
+      <button class="btn btn-primary btn-block" type="submit">Simpan dan lanjutkan</button>
+    </form>
+  </main>
+
+  <div id="toast-region" class="toast-region" aria-live="polite"></div>
+
+  <script type="module" src="src/js/pages/ganti-sandi.js"></script>
+</body>
+</html>

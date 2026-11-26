@@ -1,0 +1,82 @@
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  color: var(--ink);
+  /* Latar situs putih bersih (keputusan Din 25 Nov); token --cream tetap
+     dipakai untuk aksen kecil seperti latar hover menu dan tabel. */
+  background: var(--white);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+a { color: var(--green-900); }
+button, input, select, textarea { font: inherit; }
+button { cursor: pointer; }
+h1, h2, h3, p { margin-top: 0; }
+h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
+
+:focus-visible {
+  outline: 3px solid var(--green-700);
+  outline-offset: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: -60px;
+  z-index: 100;
+  background: var(--green-900);
+  color: var(--white);
+  padding: 10px 16px;
+  border-radius: var(--radius-sm);
+}
+.skip-link:focus { top: 12px; color: var(--white); }
+
+.container { width: var(--container); margin-inline: auto; }
+.app { min-height: 70vh; }
+.app:focus { outline: none; }
+
+::selection { background: var(--gold-soft); color: var(--green-950); }
+
+section[id] { scroll-margin-top: calc(var(--header-height) + 16px); }
+
+.section { padding: 72px 0 8px; }
+.section-head { max-width: 760px; margin-bottom: 28px; }
+.section-head h2 { font-size: clamp(26px, 3vw, 34px); margin-bottom: 8px; }
+.section-head p { color: var(--body); margin-bottom: 0; }
+.kicker {
+  display: inline-block;
+  font-size: 12px; font-weight: 800;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--terra);
+  margin-bottom: 10px;
+}
+.kicker::after {
+  content: ""; display: block;
+  width: 36px; height: 3px; border-radius: 2px;
+  background: var(--gold); margin-top: 6px;
+}
+
+.muted { color: var(--muted); }
+.small { font-size: 13px; }
+.example-note {
+  display: inline-block;
+  font-size: 13px;
+  color: var(--body);
+  background: var(--sand);
+  border-radius: 6px;
+  padding: 4px 10px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

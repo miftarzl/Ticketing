@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Masuk ke akun TMII Tiket.">
+  <title>Masuk - TMII Tiket</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/tokens.css">
+  <link rel="stylesheet" href="src/css/base.css">
+  <link rel="stylesheet" href="src/css/layout.css">
+  <link rel="stylesheet" href="src/css/components.css">
+  <link rel="stylesheet" href="src/css/pages.css">
+  <link rel="stylesheet" href="src/css/responsive.css">
+  <link rel="stylesheet" href="src/css/print.css">
+</head>
+<body data-page="masuk">
+  <a class="skip-link" href="#main">Lewati ke isi halaman</a>
+  <header id="site-header" class="site-header"></header>
+
+  <main id="main" class="app">
+    <div class="container">
+      <div class="auth-wrap">
+        <form class="card auth-card" id="login-form" novalidate>
+          <h1>Masuk</h1>
+          <p class="muted">Masuk untuk melihat pesanan dan e-tiket kamu.</p>
+          <div class="field">
+            <label for="login-email">Email</label>
+            <input id="login-email" name="email" type="email" autocomplete="email" placeholder="nama@email.com" required>
+          </div>
+          <div class="field">
+            <label for="login-password">Kata sandi</label>
+            <input id="login-password" name="password" type="password" autocomplete="current-password" placeholder="Kata sandi kamu" required>
+          </div>
+          <p><a class="btn btn-ghost" href="lupa-sandi.html">Lupa kata sandi</a></p>
+          <button class="btn btn-primary btn-block" type="submit">Masuk</button>
+          <p class="auth-switch">Belum punya akun? <a href="daftar.html">Daftar</a></p>
+          <p class="small muted">Akun tersimpan di database server. Pastikan server menyala dengan perintah node server.js.</p>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+  <dialog id="payment-dialog" class="dialog" aria-labelledby="payment-title"></dialog>
+  <div id="toast-region" class="toast-region" aria-live="polite"></div>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+  <script type="module" src="src/js/main.js"></script>
+  <script type="module" src="src/js/pages/masuk.js"></script>
+
+</body>
+</html>
